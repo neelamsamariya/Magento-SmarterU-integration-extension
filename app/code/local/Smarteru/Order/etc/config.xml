@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config>
+	<global>
+		<events>
+			<sales_order_invoice_save_after>
+				<observers>
+					<smarteru_order>
+						<class>Smarteru_Order_Model_Observer</class>
+						<method>notify_smarteru</method>
+					</smarteru_order>
+				</observers>
+			</sales_order_invoice_save_after>
+		</events>
+	</global>
+</config>
